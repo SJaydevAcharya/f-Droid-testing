@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-13T14:34:47 IST" name="Default suite" finished-at="2025-06-13T14:34:52 IST" duration-ms="5285">
+    <groups>
+    </groups>
+    <test started-at="2025-06-13T14:34:47 IST" name="Default test" finished-at="2025-06-13T14:34:52 IST" duration-ms="5285">
+      <class name="tests.SearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SearchTest@1aafa419]" started-at="2025-06-13T14:34:47 IST" name="setUp" finished-at="2025-06-13T14:34:48 IST" duration-ms="1192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchResultsContainApp()[pri:0, instance:tests.SearchTest@1aafa419]" started-at="2025-06-13T14:34:48 IST" name="testSearchResultsContainApp" finished-at="2025-06-13T14:34:52 IST" duration-ms="4052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchResultsContainApp -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SearchTest@1aafa419]" started-at="2025-06-13T14:34:52 IST" name="teardown" finished-at="2025-06-13T14:34:52 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.SearchTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
