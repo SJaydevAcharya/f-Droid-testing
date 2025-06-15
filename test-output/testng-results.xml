@@ -1,25 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-13T19:16:04 IST" name="Default suite" finished-at="2025-06-13T19:16:30 IST" duration-ms="26760">
+  <suite started-at="2025-06-15T22:26:13 IST" name="Suite1" finished-at="2025-06-15T22:28:17 IST" duration-ms="124063">
     <groups>
     </groups>
-    <test started-at="2025-06-13T19:16:04 IST" name="Default test" finished-at="2025-06-13T19:16:30 IST" duration-ms="26760">
+    <test started-at="2025-06-15T22:26:13 IST" name="Test1" finished-at="2025-06-15T22:27:31 IST" duration-ms="78623">
       <class name="tests.SearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SearchTest@1aafa419]" started-at="2025-06-13T19:16:04 IST" name="setUp" finished-at="2025-06-13T19:16:21 IST" duration-ms="16876" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SearchTest@33c911a1]" started-at="2025-06-15T22:26:13 IST" name="setUp" finished-at="2025-06-15T22:26:15 IST" duration-ms="2277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSearchResultsContainApp()[pri:0, instance:tests.SearchTest@1aafa419]" started-at="2025-06-13T19:16:21 IST" name="testSearchResultsContainApp" finished-at="2025-06-13T19:16:30 IST" duration-ms="9564" status="PASS">
+        <test-method signature="testSearchResultsContainApp()[pri:0, instance:tests.SearchTest@33c911a1]" started-at="2025-06-15T22:26:15 IST" name="testSearchResultsContainApp" finished-at="2025-06-15T22:26:23 IST" duration-ms="8365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchResultsContainApp -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SearchTest@1aafa419]" started-at="2025-06-13T19:16:30 IST" name="teardown" finished-at="2025-06-13T19:16:30 IST" duration-ms="281" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SearchTest@33c911a1]" started-at="2025-06-15T22:26:24 IST" name="teardown" finished-at="2025-06-15T22:26:24 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SearchTest@33c911a1]" started-at="2025-06-15T22:26:24 IST" name="setUp" finished-at="2025-06-15T22:26:25 IST" duration-ms="1140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchResultsDoNotContainApp()[pri:0, instance:tests.SearchTest@33c911a1]" started-at="2025-06-15T22:26:25 IST" name="testSearchResultsDoNotContainApp" finished-at="2025-06-15T22:27:31 IST" duration-ms="66471" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Unexpected result for: 'shoes',
+Unexpected result for: 'blender',
+Unexpected result for: 'tomato',
+Unexpected result for: 'soap']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Unexpected result for: 'shoes',
+Unexpected result for: 'blender',
+Unexpected result for: 'tomato',
+Unexpected result for: 'soap'
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at tests.SearchTest.testSearchResultsDoNotContainApp(SearchTest.java:140)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchResultsDoNotContainApp -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SearchTest@33c911a1]" started-at="2025-06-15T22:27:31 IST" name="teardown" finished-at="2025-06-15T22:27:31 IST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.SearchTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+    <test started-at="2025-06-15T22:26:13 IST" name="Test2" finished-at="2025-06-15T22:28:17 IST" duration-ms="124063">
+      <class name="tests.SearchTest">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.SearchTest@fa36558]" started-at="2025-06-15T22:26:13 IST" name="setupReport" finished-at="2025-06-15T22:26:13 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SearchTest@fa36558]" started-at="2025-06-15T22:26:13 IST" name="setUp" finished-at="2025-06-15T22:26:17 IST" duration-ms="4375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchResultsContainApp()[pri:0, instance:tests.SearchTest@fa36558]" started-at="2025-06-15T22:26:17 IST" name="testSearchResultsContainApp" finished-at="2025-06-15T22:26:29 IST" duration-ms="11909" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: h4.package-name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.2, moz:accessibilityChecks: false, moz:buildID: 20240915113344, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12572, moz:profile: C:\Users\masai^\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 0b3dc0c5-35f0-45a5-aee7-2b53b87a926b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: h4.package-name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.2, moz:accessibilityChecks: false, moz:buildID: 20240915113344, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12572, moz:profile: C:\Users\masai^\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 0b3dc0c5-35f0-45a5-aee7-2b53b87a926b
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at tests.SearchTest.testSearchResultsContainApp(SearchTest.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchResultsContainApp -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SearchTest@fa36558]" started-at="2025-06-15T22:26:29 IST" name="teardown" finished-at="2025-06-15T22:26:30 IST" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.SearchTest@fa36558]" started-at="2025-06-15T22:26:30 IST" name="setUp" finished-at="2025-06-15T22:26:32 IST" duration-ms="2369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchResultsDoNotContainApp()[pri:0, instance:tests.SearchTest@fa36558]" started-at="2025-06-15T22:26:32 IST" name="testSearchResultsDoNotContainApp" finished-at="2025-06-15T22:28:16 IST" duration-ms="103994" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Unexpected result for: 'shoes',
+Unexpected result for: 'blender',
+Unexpected result for: 'tomato',
+Unexpected result for: 'soap']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Unexpected result for: 'shoes',
+Unexpected result for: 'blender',
+Unexpected result for: 'tomato',
+Unexpected result for: 'soap'
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at tests.SearchTest.testSearchResultsDoNotContainApp(SearchTest.java:140)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchResultsDoNotContainApp -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SearchTest@fa36558]" started-at="2025-06-15T22:28:16 IST" name="teardown" finished-at="2025-06-15T22:28:17 IST" duration-ms="713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardownReport()[pri:0, instance:tests.SearchTest@fa36558]" started-at="2025-06-15T22:28:17 IST" name="teardownReport" finished-at="2025-06-15T22:28:17 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownReport -->
+      </class> <!-- tests.SearchTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite1 -->
 </testng-results>

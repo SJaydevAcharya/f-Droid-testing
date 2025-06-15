@@ -5,8 +5,10 @@
     <classes>
       <class name="tests.SearchTest">
         <methods>
-          <include name="testSearchResultsContainApp"/>
+          <include name="setupReport"/>
           <include name="setUp"/>
+          <include name="teardownReport"/>
+          <include name="testSearchResultsDoNotContainApp"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- tests.SearchTest -->
